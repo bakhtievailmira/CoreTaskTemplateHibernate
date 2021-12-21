@@ -12,13 +12,11 @@ import java.util.List;
 
 public class UserDaoJDBCImpl implements UserDao {
     private static Util util;
-    private static Statement statement;
     private static PreparedStatement preparedStatement;
     private static long myId = 1;
     {
         try {
             util = new Util();
-            statement = util.getConnection().createStatement();
         } catch (SQLException e) {
             e.printStackTrace();
         }
