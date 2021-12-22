@@ -15,11 +15,11 @@ public class Util {
     private Connection connection;
 
     public Util() throws SQLException {
-           connection = DriverManager.getConnection(HOST, USER, PASSWORD);
+        connection = DriverManager.getConnection(HOST, USER, PASSWORD);
+        connection.setAutoCommit(false);
     }
 
     public Connection getConnection() {
         return this.connection;
     }
-
 }

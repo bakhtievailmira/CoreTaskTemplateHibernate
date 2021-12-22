@@ -20,8 +20,8 @@ public class Main {
         for (int i = 0; i < usersList.size(); i++) {
             System.out.println(usersList.get(i));
         }
-        userService.cleanUsersTable();
-        userService.dropUsersTable();
+    //    userService.cleanUsersTable();
+    //    userService.dropUsersTable();
 
     }
 
